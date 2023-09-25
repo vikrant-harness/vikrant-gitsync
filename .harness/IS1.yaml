@@ -1,0 +1,18 @@
+inputSet:
+  name: IS1
+  identifier: IS1
+  orgIdentifier: default
+  projectIdentifier: DoNotDelete_Vikrant
+  pipeline:
+    identifier: vikrantremote
+    stages:
+      - stage:
+          identifier: s1
+          type: Custom
+          spec:
+            execution:
+              steps:
+                - step:
+                    identifier: ShellScript_1
+                    type: ShellScript
+                    timeout: 10m
