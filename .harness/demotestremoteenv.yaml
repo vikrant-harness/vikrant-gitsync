@@ -1,0 +1,18 @@
+environment:
+  name: demo-test-remote-env
+  identifier: demotestremoteenv
+  orgIdentifier: default
+  projectIdentifier: DoNotDelete_Vikrant
+  description: ""
+  tags: {}
+  type: Production
+  yaml: |
+    environment:
+      name: demo-test-remote-env
+      identifier: demotestremoteenv
+      accountId: OgiB4-xETamKNVAz-wQRjw
+      orgIdentifier: default
+      projectIdentifier: DoNotDelete_Vikrant
+      type: Production
+      description: ""
+      tags: {}
