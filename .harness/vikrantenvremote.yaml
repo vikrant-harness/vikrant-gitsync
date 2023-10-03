@@ -1,0 +1,7 @@
+environment:
+  orgIdentifier: default
+  projectIdentifier: DoNotDelete_Vikrant
+  identifier: vikrantenvremote
+  tags: {}
+  name: vikrant-env-remote
+  type: Production
