@@ -1,0 +1,20 @@
+template:
+  name: remote-step-template
+  identifier: remotesteptemplate
+  versionLabel: v1
+  type: Step
+  projectIdentifier: DoNotDelete_Vikrant
+  orgIdentifier: default
+  tags: {}
+  spec:
+    timeout: 10m
+    type: ShellScript
+    spec:
+      shell: Bash
+      onDelegate: true
+      source:
+        type: Inline
+        spec:
+          script: echo 1
+      environmentVariables: []
+      outputVariables: []
