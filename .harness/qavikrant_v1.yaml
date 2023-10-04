@@ -1,0 +1,12 @@
+template:
+  name: qa-vikrant
+  identifier: qavikrant
+  versionLabel: v1
+  type: Step
+  projectIdentifier: DoNotDeleteVikrant
+  orgIdentifier: default
+  tags: {}
+  spec:
+    type: Wait
+    spec:
+      duration: 10m
