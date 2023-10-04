@@ -1,0 +1,12 @@
+template:
+  name: remote-step-2
+  identifier: remotestep2
+  versionLabel: v1
+  type: Step
+  projectIdentifier: DoNotDelete_Vikrant
+  orgIdentifier: default
+  tags: {}
+  spec:
+    type: Wait
+    spec:
+      duration: 10m
