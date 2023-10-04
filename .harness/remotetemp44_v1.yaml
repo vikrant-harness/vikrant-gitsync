@@ -1,0 +1,12 @@
+template:
+  name: remote-temp-44
+  identifier: remotetemp44
+  versionLabel: v1
+  type: Step
+  projectIdentifier: DoNotDelete_Vikrant
+  orgIdentifier: default
+  tags: {}
+  spec:
+    type: Wait
+    spec:
+      duration: 10m
