@@ -1,0 +1,12 @@
+template:
+  name: template-step-final-demo
+  identifier: templatestepfinaldemo
+  versionLabel: v1
+  type: Step
+  projectIdentifier: DoNotDelete_Vikrant
+  orgIdentifier: default
+  tags: {}
+  spec:
+    type: Wait
+    spec:
+      duration: 10m
