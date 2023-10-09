@@ -1,0 +1,5 @@
+service:
+  name: vikrant-remote-service
+  identifier: vikrantremoteservice
+  orgIdentifier: default
+  projectIdentifier: vikranttest
