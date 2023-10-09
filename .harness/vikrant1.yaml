@@ -1,0 +1,5 @@
+service:
+  name: vikrant-1
+  identifier: vikrant1
+  orgIdentifier: default
+  projectIdentifier: vikranttest
