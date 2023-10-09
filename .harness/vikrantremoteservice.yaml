@@ -3,3 +3,6 @@ service:
   identifier: vikrantremoteservice
   orgIdentifier: default
   projectIdentifier: vikranttest
+  serviceDefinition:
+    spec: {}
+    type: Kubernetes
