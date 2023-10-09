@@ -1,0 +1,7 @@
+environment:
+  name: vikrant-remote-env-1
+  identifier: vikrantremoteenv1
+  accountId: jld2GzI7S6CQfb6hJ7O0bw
+  orgIdentifier: default
+  projectIdentifier: vikranttest
+  type: Production
