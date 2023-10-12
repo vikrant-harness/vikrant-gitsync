@@ -1,7 +1,7 @@
 pipeline:
   name: testSGTemplateISSUE
   identifier: testSGTemplateISSUE
-  projectIdentifier: Pratyush_TestZone
+  projectIdentifier: DoNotDelete_Vikrant
   orgIdentifier: default
   tags: {}
   properties:
