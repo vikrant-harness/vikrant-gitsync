@@ -1,0 +1,93 @@
+pipeline:
+  name: testSGTemplateISSUE
+  identifier: testSGTemplateISSUE
+  projectIdentifier: Pratyush_TestZone
+  orgIdentifier: default
+  tags: {}
+  properties:
+    ci:
+      codebase:
+        connectorRef: <+input>
+        repoName: <+input>
+        build: <+input>
+  stages:
+    - stage:
+        name: testSG
+        identifier: testSG
+        template:
+          templateRef: account.AntDocker_Stage_CI
+          versionLabel: 1.0.0
+          templateInputs:
+            type: CI
+            spec:
+              execution:
+                steps:
+                  - parallel:
+                      - stepGroup:
+                          identifier: Publish_to_Local_Repository
+                          steps:
+                            - step:
+                                identifier: Run_3
+                                type: Run
+                                spec:
+                                  connectorRef: <+input>
+                                  image: <+input>
+                                  command: <+input>
+                      - stepGroup:
+                          # identifier: Trigger_Blackduck_and_Veracode_Scans
+                          steps:
+                            - stepGroup:
+                                # identifier: Veracode_Scan
+                                steps:
+                                  - stepGroup:
+                                      # identifier: VeracodePolicy_Step_Scan
+                                      template:
+                                        templateInputs:
+                                          steps:
+                                            - step:
+                                                identifier: veracodeScan
+                                                type: Run
+                                                spec:
+                                                  envVariables:
+                                                    buildId: <+input>
+                                                    appCode: <+input>
+                                                    workspace: <+input>
+                                                    jobName: <+input>
+                                                    targetScanFile: <+input>
+                                                    veracodeVersion: <+input>
+                                                    veracodeAppId: <+input>
+                                                    jobType: <+input>
+            variables:
+              - name: BuildVersionFile
+                type: String
+                value: <+input>
+              - name: AntScriptPath
+                type: String
+                value: <+input>
+              - name: AntBuildFile
+                type: String
+                value: <+input>.default(build.xml)
+              - name: AntBuildTarget
+                type: String
+                value: <+input>
+              - name: AntBuildParameter
+                type: String
+                value: <+input>
+              - name: DockerFilePath
+                type: String
+                value: <+input>.default(Dockerfile)
+              - name: ImageName
+                type: String
+                value: <+input>
+              - name: DockerParameter
+                type: String
+                value: <+input>
+              - name: VeracodeAppID
+                type: String
+                value: <+input>
+              - name: VeracodePolicyScanFile
+                type: String
+                value: <+input>
+              - name: BlackduckProject
+                type: String
+                value: <+input>
