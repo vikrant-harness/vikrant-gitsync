@@ -1,0 +1,7 @@
+environment:
+  name: remote-env-17th
+  identifier: remoteenv17th
+  accountId: OgiB4-xETamKNVAz-wQRjw
+  orgIdentifier: default
+  projectIdentifier: DoNotDelete_Vikrant
+  type: PreProduction
