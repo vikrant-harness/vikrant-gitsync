@@ -1,0 +1,7 @@
+environment:
+  name: vikrant-new-remote
+  identifier: vikrantnewremote
+  accountId: 61HMT1vNRcSeKD7k4nxzcQ
+  orgIdentifier: default
+  projectIdentifier: vikranttest
+  type: PreProduction
