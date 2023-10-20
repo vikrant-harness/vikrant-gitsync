@@ -1,0 +1,14 @@
+environment:
+  name: inline-remote-neww
+  identifier: inlineremoteneww
+  description: ""
+  tags: {}
+  type: PreProduction
+  orgIdentifier: default
+  projectIdentifier: vikranttest
+  variables:
+    - name: varr-2
+      type: String
+      value: <+input>
+      description: ""
+      required: false
