@@ -1,0 +1,14 @@
+environment:
+  name: demo-remote-inline-env
+  identifier: demoremoteinlineenv
+  description: ""
+  tags: {}
+  type: PreProduction
+  orgIdentifier: default
+  projectIdentifier: vikranttest
+  variables:
+    - name: V
+      type: String
+      value: V
+      description: ""
+      required: false
