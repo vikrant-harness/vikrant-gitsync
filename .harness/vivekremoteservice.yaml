@@ -3,3 +3,12 @@ service:
   identifier: vivekremoteservice
   orgIdentifier: default
   projectIdentifier: DoNotDelete_Vikrant
+  serviceDefinition:
+    spec:
+      variables:
+        - name: B
+          type: String
+          description: ""
+          required: false
+          value: <+input>
+    type: Kubernetes
