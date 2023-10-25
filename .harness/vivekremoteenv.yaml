@@ -1,7 +1,12 @@
 environment:
   name: vivek-remote-env
   identifier: vivekremoteenv
-  accountId: OgiB4-xETamKNVAz-wQRjw
+  type: Production
   orgIdentifier: default
   projectIdentifier: DoNotDelete_Vikrant
-  type: Production
+  variables:
+    - name: A
+      type: String
+      value: <+input>
+      description: ""
+      required: false
