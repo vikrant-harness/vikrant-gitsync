@@ -8,7 +8,7 @@ pipeline:
     templateInputs:
       stages:
         - stage:
-            identifier: s1
+            identifier: ed
             template:
               templateInputs:
                 type: Deployment
