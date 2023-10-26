@@ -1,0 +1,25 @@
+pipeline:
+  name: finalRemote
+  identifier: finalRemote
+  template:
+    templateRef: remoteabhinav
+    versionLabel: v1
+    gitBranch: main-abhinav
+    templateInputs:
+      stages:
+        - stage:
+            identifier: ed
+            template:
+              templateInputs:
+                type: Deployment
+                spec:
+                  environment:
+                    environmentRef: <+input>
+                    environmentInputs: <+input>
+                    serviceOverrideInputs: <+input>
+                    infrastructureDefinitions: <+input>
+                  service:
+                    serviceRef: remotesvc
+  tags: {}
+  projectIdentifier: DoNotDelete_Vikrant
+  orgIdentifier: default
