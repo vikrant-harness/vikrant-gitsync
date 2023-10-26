@@ -1,0 +1,27 @@
+template:
+  name: remote-abhinav
+  identifier: remoteabhinav
+  versionLabel: v1
+  type: Pipeline
+  projectIdentifier: DoNotDelete_Vikrant
+  orgIdentifier: default
+  tags: {}
+  spec:
+    stages:
+      - stage:
+          name: s1
+          identifier: s1
+          template:
+            templateRef: inline26ThOc
+            versionLabel: v1
+            templateInputs:
+              type: Deployment
+              spec:
+                environment:
+                  environmentRef: <+input>
+                  environmentInputs: <+input>
+                  serviceOverrideInputs: <+input>
+                  infrastructureDefinitions: <+input>
+                service:
+                  serviceRef: <+input>
+                  serviceInputs: <+input>
