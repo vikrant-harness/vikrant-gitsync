@@ -1,0 +1,21 @@
+template:
+  name: remote-step-banao
+  identifier: remotestepbanao
+  versionLabel: v1
+  type: Step
+  projectIdentifier: DoNotDelete_Vikrant
+  orgIdentifier: default
+  tags: {}
+  spec:
+    timeout: 10m
+    type: ShellScript
+    spec:
+      shell: Bash
+      onDelegate: true
+      delegateSelectors: []
+      source:
+        type: Inline
+        spec:
+          script: <+input>
+      environmentVariables: []
+      outputVariables: []
