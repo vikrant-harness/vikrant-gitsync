@@ -9,11 +9,12 @@ template:
   spec:
     stages:
       - stage:
-          name: s1
-          identifier: s1
+          name: ed
+          identifier: ed
           template:
-            templateRef: inline26ThOc
+            templateRef: remotevikran
             versionLabel: v1
+            gitBranch: main-vikran
             templateInputs:
               type: Deployment
               spec:
