@@ -1,6 +1,8 @@
 environment:
   name: vivek-remote-env
   identifier: vivekremoteenv
+  description: ""
+  tags: {}
   type: Production
   orgIdentifier: default
   projectIdentifier: DoNotDelete_Vikrant
@@ -8,5 +10,10 @@ environment:
     - name: A
       type: String
       value: <+input>
+      description: ""
+      required: false
+    - name: B
+      type: String
+      value: wfwf
       description: ""
       required: false
