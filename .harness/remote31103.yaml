@@ -12,3 +12,8 @@ environment:
       value: <+input>
       description: ""
       required: false
+    - name: C
+      type: String
+      value: <+input>
+      description: ""
+      required: false
