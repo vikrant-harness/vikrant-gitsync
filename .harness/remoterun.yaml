@@ -36,7 +36,43 @@ pipeline:
           environments:
             metadata:
               parallel: true
-            values: <+input>
+            values:
+              - environmentRef: vivekremoteenv
+                gitBranch: main-patch-2
+                environmentInputs:
+                  identifier: vivekremoteenv
+                  type: Production
+                  variables:
+                    - name: A
+                      type: String
+                      value: <+input>
+                deployToAll: true
+                infrastructureDefinitions: <+input>
+              - environmentRef: remote11101
+                gitBranch: main11101
+                environmentInputs:
+                  identifier: remote11101
+                  type: Production
+                  variables:
+                    - name: B
+                      type: String
+                      value: <+input>
+                    - name: C
+                      type: String
+                      value: <+input>
+                deployToAll: true
+                infrastructureDefinitions: <+input>
+              - environmentRef: remote111015
+                gitBranch: main11101-5
+                environmentInputs:
+                  identifier: remote111015
+                  type: Production
+                  variables:
+                    - name: D
+                      type: String
+                      value: <+input>
+                deployToAll: true
+                infrastructureDefinitions: <+input>
         tags: {}
         failureStrategies:
           - onFailure:
