@@ -1,0 +1,14 @@
+environment:
+  name: remote11101
+  identifier: remote11101
+  description: ""
+  tags: {}
+  type: Production
+  orgIdentifier: default
+  projectIdentifier: DoNotDelete_Vikrant
+  variables:
+    - name: B
+      type: String
+      value: <+input>
+      description: ""
+      required: false
