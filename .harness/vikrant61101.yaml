@@ -11,4 +11,9 @@ service:
           description: ""
           required: false
           value: <+input>
+        - name: B
+          type: String
+          description: ""
+          required: false
+          value: <+input>
     type: Kubernetes
