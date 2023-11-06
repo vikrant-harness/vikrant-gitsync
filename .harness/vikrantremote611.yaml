@@ -1,7 +1,13 @@
 environment:
   name: vikrant-remote-611
   identifier: vikrantremote611
-  accountId: OgiB4-xETamKNVAz-wQRjw
+  type: Production
   orgIdentifier: default
   projectIdentifier: DoNotDelete_Vikrant
-  type: Production
+  variables:
+    - name: A
+      type: String
+      value: <+input>
+      description: ""
+      required: false
+  storeType: REMOTE
