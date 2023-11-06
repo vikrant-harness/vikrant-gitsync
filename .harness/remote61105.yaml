@@ -1,7 +1,23 @@
 environment:
   name: remote-61105
   identifier: remote61105
-  accountId: OgiB4-xETamKNVAz-wQRjw
+  tags: {}
+  type: Production
   orgIdentifier: default
   projectIdentifier: DoNotDelete_Vikrant
-  type: Production
+  overrides:
+    manifests:
+      - manifest:
+          identifier: manifest_1
+          type: Values
+          spec:
+            store:
+              type: Git
+              spec:
+                connectorRef: <+input>
+                gitFetchType: Branch
+                paths:
+                  - value
+                repoName: repoName
+                branch: branch
+  storeType: REMOTE
