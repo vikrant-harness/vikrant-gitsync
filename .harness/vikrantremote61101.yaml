@@ -10,4 +10,19 @@ environment:
       value: <+input>
       description: ""
       required: false
+  overrides:
+    manifests:
+      - manifest:
+          identifier: m12
+          type: Values
+          spec:
+            store:
+              type: Git
+              spec:
+                connectorRef: <+input>
+                gitFetchType: Branch
+                paths:
+                  - fwe
+                repoName: d
+                branch: fw
   storeType: REMOTE
