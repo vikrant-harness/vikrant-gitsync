@@ -1,7 +1,13 @@
 environment:
   name: fwr
   identifier: fwr
-  accountId: OgiB4-xETamKNVAz-wQRjw
+  type: Production
   orgIdentifier: default
   projectIdentifier: DoNotDelete_Vikrant
-  type: Production
+  variables:
+    - name: wd
+      type: String
+      value: ew
+      description: ""
+      required: false
+  storeType: REMOTE
