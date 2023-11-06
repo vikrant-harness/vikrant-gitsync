@@ -3,3 +3,12 @@ service:
   identifier: vikrant61101
   orgIdentifier: default
   projectIdentifier: DoNotDelete_Vikrant
+  serviceDefinition:
+    spec:
+      variables:
+        - name: A
+          type: String
+          description: ""
+          required: false
+          value: <+input>
+    type: Kubernetes
