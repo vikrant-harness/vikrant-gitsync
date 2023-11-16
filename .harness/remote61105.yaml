@@ -5,6 +5,12 @@ environment:
   type: Production
   orgIdentifier: default
   projectIdentifier: DoNotDelete_Vikrant
+  variables:
+    - name: varA
+      type: String
+      value: A
+      description: ""
+      required: false
   overrides:
     manifests:
       - manifest:
