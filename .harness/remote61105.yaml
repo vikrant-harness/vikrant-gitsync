@@ -8,7 +8,7 @@ environment:
   variables:
     - name: varA
       type: String
-      value: B
+      value: C
       description: ""
       required: false
   overrides:
