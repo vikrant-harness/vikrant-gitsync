@@ -1,0 +1,36 @@
+inputSet:
+  name: inputSet1
+  identifier: inputSet1
+  orgIdentifier: default
+  projectIdentifier: DoNotDelete_Vikrant
+  pipeline:
+    identifier: remotepip
+    stages:
+      - stage:
+          identifier: s1
+          type: Custom
+          spec:
+            execution:
+              steps:
+                - step:
+                    identifier: ShellScript_1
+                    type: ShellScript
+                    spec:
+                      source:
+                        type: Inline
+                        spec:
+                          script: echo s1
+      - stage:
+          identifier: s2
+          type: Custom
+          spec:
+            execution:
+              steps:
+                - step:
+                    identifier: ShellScript_1
+                    type: ShellScript
+                    spec:
+                      source:
+                        type: Inline
+                        spec:
+                          script: <+input>
