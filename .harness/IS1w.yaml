@@ -1,0 +1,17 @@
+inputSet:
+  name: IS1w
+  identifier: IS1w
+  orgIdentifier: default
+  projectIdentifier: DoNotDelete_Vikrant
+  pipeline:
+    identifier: webhook
+    stages:
+      - stage:
+          identifier: s1
+          type: Custom
+          spec:
+            environment:
+              environmentRef: <+input>
+              environmentInputs: <+input>
+              serviceOverrideInputs: <+input>
+              infrastructureDefinitions: <+input>
