@@ -27,4 +27,10 @@ pipeline:
                     environmentVariables: []
                     outputVariables: []
                   timeout: 1000m
+          environment:
+            environmentRef: <+input>
+            deployToAll: false
+            environmentInputs: <+input>
+            serviceOverrideInputs: <+input>
+            infrastructureDefinitions: <+input>
         tags: {}
