@@ -1,0 +1,24 @@
+template:
+  name: pipelinbeeeee
+  identifier: pipelinbeeeee
+  versionLabel: "1"
+  type: Pipeline
+  projectIdentifier: svcredesignhinger
+  orgIdentifier: harness
+  tags: {}
+  spec:
+    stages:
+      - stage:
+          name: 3e
+          identifier: e
+          tags: {}
+          template:
+            templateRef: account.some_custom_stage_213
+            versionLabel: "12"
+            templateInputs:
+              type: Custom
+              spec:
+                variables:
+                  - name: test2
+                    type: String
+                    value: <+input>
