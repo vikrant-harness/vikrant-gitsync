@@ -1,0 +1,24 @@
+template:
+  name: grfwe
+  identifier: grfwe
+  versionLabel: wed
+  type: Pipeline
+  projectIdentifier: svcredesignhinger
+  orgIdentifier: harness
+  tags: {}
+  spec:
+    stages:
+      - stage:
+          name: dwe
+          identifier: dwe
+          tags: {}
+          template:
+            templateRef: account.some_custom_stage_213
+            versionLabel: "12"
+            templateInputs:
+              type: Custom
+              spec:
+                variables:
+                  - name: test2
+                    type: String
+                    value: <+input>
