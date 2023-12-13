@@ -1,0 +1,24 @@
+template:
+  name: efe
+  identifier: efe
+  versionLabel: few
+  type: Pipeline
+  projectIdentifier: svcredesignhinger
+  orgIdentifier: harness
+  tags: {}
+  spec:
+    stages:
+      - stage:
+          name: ed
+          identifier: ed
+          tags: {}
+          template:
+            templateRef: account.some_custom_stage_213
+            versionLabel: "12"
+            templateInputs:
+              type: Custom
+              spec:
+                variables:
+                  - name: test2
+                    type: String
+                    value: <+input>
