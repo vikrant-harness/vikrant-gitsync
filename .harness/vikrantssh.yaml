@@ -17,4 +17,11 @@ service:
                 repositoryFormat: generic
               identifier: test
               type: ArtifactoryRegistry
+            - spec:
+                connectorRef: account.DockerHingerTest
+                imagePath: library/nginx
+                tag: <+input>
+                digest: ""
+              identifier: docker
+              type: DockerRegistry
     type: Ssh
