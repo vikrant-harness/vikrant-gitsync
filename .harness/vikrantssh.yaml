@@ -1,0 +1,5 @@
+service:
+  name: vikrant-ssh
+  identifier: vikrantssh
+  orgIdentifier: harness
+  projectIdentifier: svcredesignhinger
