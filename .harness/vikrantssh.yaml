@@ -3,3 +3,18 @@ service:
   identifier: vikrantssh
   orgIdentifier: harness
   projectIdentifier: svcredesignhinger
+  serviceDefinition:
+    spec:
+      artifacts:
+        primary:
+          primaryArtifactRef: <+input>
+          sources:
+            - spec:
+                connectorRef: jfrog
+                artifactDirectory: /
+                artifactPath: <+input>
+                repository: harness-internal
+                repositoryFormat: generic
+              identifier: test
+              type: ArtifactoryRegistry
+    type: Ssh
