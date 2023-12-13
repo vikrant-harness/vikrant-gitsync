@@ -6,6 +6,6 @@ infrastructureDefinition:
   type: KubernetesDirect
   spec:
     connectorRef: <+input>
-    namespace: 1default
+    namespace: defaulttest
     releaseName: release-<+INFRA_KEY_SHORT_ID>
   allowSimultaneousDeployments: false
