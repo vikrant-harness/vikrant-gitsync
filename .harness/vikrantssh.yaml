@@ -24,4 +24,10 @@ service:
                 digest: ""
               identifier: docker
               type: DockerRegistry
+      variables:
+        - name: svar1
+          type: String
+          description: ""
+          required: false
+          value: "1"
     type: Ssh
