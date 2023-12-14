@@ -30,4 +30,9 @@ service:
           description: ""
           required: false
           value: "1"
+        - name: svar22222
+          type: String
+          description: ""
+          required: false
+          value: "2222"
     type: Ssh
