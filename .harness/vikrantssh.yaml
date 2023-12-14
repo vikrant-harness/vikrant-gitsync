@@ -34,5 +34,5 @@ service:
           type: String
           description: ""
           required: false
-          value: <+input>
+          value: "2"
     type: Ssh
