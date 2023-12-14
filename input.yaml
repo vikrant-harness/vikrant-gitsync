@@ -1,0 +1,20 @@
+inputSet:
+  name: input set test
+  identifier: input_set_test
+  orgIdentifier: NgTriggersOrg
+  projectIdentifier: viniciusTest
+  pipeline:
+    identifier: test_remote
+    properties:
+      ci:
+        codebase:
+          connectorRef: <+input>
+          repoName: <+input>
+          build: <+input>
+  provider:
+    type: Others
+    title: Third-party Git provider
+    info: Store pipeline in a third party Git provider
+    icon: service-github
+    size: 20
+  object Object: pipeline.properties.ci.codebase
