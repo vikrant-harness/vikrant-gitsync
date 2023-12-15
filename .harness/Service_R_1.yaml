@@ -1,0 +1,5 @@
+service:
+  name: Service_R_1
+  identifier: Service_R_1
+  orgIdentifier: default
+  projectIdentifier: Shylaja_Test
