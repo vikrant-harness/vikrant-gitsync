@@ -1,7 +1,6 @@
 environment:
   name: project-vikrant-env
   identifier: projectvikrantenv
-  accountId: px7xd_BFRCi-pfWPYXVjvw
+  type: PreProduction
   orgIdentifier: harness
   projectIdentifier: svcredesignhinger
-  type: Production
