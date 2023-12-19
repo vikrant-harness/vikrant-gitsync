@@ -1,0 +1,24 @@
+pipeline:
+  name: testoncemore
+  identifier: testoncemore
+  projectIdentifier: svcredesignhinger
+  orgIdentifier: harness
+  tags: {}
+  stages:
+    - stage:
+        name: s1
+        identifier: s1
+        description: ""
+        type: Custom
+        spec:
+          execution:
+            steps:
+              - step:
+                  type: Wait
+                  name: Wait_1
+                  identifier: Wait_1
+                  spec:
+                    duration: 10m
+            rollbackSteps: []
+          serviceDependencies: []
+        tags: {}
