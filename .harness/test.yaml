@@ -1,0 +1,12 @@
+service:
+  name: test
+  identifier: test
+  orgIdentifier: harness
+  projectIdentifier: svcredesignhinger
+  provider:
+    type: Others
+    title: Third-party Git provider
+    info: Store pipeline in a third party Git provider
+    icon: service-github
+    size: 20
+    disabled: false
