@@ -25,11 +25,6 @@ service:
               identifier: docker
               type: DockerRegistry
       variables:
-        - name: svar1
-          type: String
-          description: ""
-          required: false
-          value: "1"
         - name: svar22222
           type: String
           description: ""
