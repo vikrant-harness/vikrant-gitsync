@@ -1,0 +1,26 @@
+inputSet:
+  name: IS111111111
+  identifier: IS111111111
+  orgIdentifier: default
+  projectIdentifier: Vikrant_Test
+  pipeline:
+    identifier: repo
+    stages:
+      - stage:
+          identifier: s1
+          type: Custom
+          spec:
+            execution:
+              steps:
+                - step:
+                    identifier: ShellScript_1
+                    type: ShellScript
+                    spec:
+                      source:
+                        type: Inline
+                        spec:
+                          script: <+input>
+            environment:
+              environmentRef: <+input>
+              environmentInputs: <+input>
+              infrastructureDefinitions: <+input>
