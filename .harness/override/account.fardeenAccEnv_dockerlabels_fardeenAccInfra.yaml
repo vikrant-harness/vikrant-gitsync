@@ -1,0 +1,38 @@
+overrides:
+  variables:
+    - name: qwqwq
+      type: String
+      value: someval
+      required: false
+  manifests:
+    - manifest:
+        identifier: manifgestname
+        type: Values
+        spec:
+          store:
+            spec:
+              connectorRef: account.git9march
+              gitFetchType: Branch
+              branch: branch
+              commitId: null
+              paths:
+                - path
+              folderPath: null
+              repoName: null
+            type: Git
+  configFiles:
+    - configFile:
+        identifier: configid
+        spec:
+          store:
+            spec:
+              files: <+input>
+              secretFiles: []
+            type: Harness
+          configFileAttributeStepParameters:
+            store:
+              type: Harness
+              spec:
+                type: Harness
+                files: <+input>
+                secretFiles: []
