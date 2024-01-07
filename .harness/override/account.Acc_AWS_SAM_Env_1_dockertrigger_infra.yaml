@@ -1,0 +1,6 @@
+overrides:
+  variables:
+    - name: latestvar
+      type: String
+      value: valuex
+      required: false
