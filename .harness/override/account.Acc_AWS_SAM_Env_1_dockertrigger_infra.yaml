@@ -4,3 +4,7 @@ overrides:
       type: String
       value: valuex
       required: false
+    - name: latestvar222
+      type: String
+      value: valuex
+      required: false
