@@ -1,0 +1,6 @@
+overrides:
+  variables:
+    - name: var1
+      type: String
+      value: fcdxs
+      required: false
