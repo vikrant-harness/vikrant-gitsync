@@ -1,0 +1,5 @@
+service:
+  name: ServiceTestRemote
+  identifier: ServiceTestRemote
+  orgIdentifier: default
+  projectIdentifier: Shylaja_Test
